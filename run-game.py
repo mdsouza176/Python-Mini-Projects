@@ -14,10 +14,9 @@ vel = 5
 isJump = False
 jumpCount = 10
 run =True
-bg = pygame.image.load('mario.png')
 
 def redraw():
-    window.blit(bg, (0,20))
+    window.fill((0,0,0))
     pygame.draw.rect(window, (255, 0, 0), (x, y, width, height))
     pygame.display.update()
 
